@@ -1,0 +1,66 @@
+.main {
+  max-width: 1060px;
+  width: 100%;
+  position: relative;
+  padding: 0px 16px;
+  margin: 100px auto;
+}
+.title {
+  max-width: 45%;
+  margin: 0px !important;
+  padding: 0;
+  border: 0;
+  font-size: 40px;
+  vertical-align: baseline;
+}
+.description {
+  color: rgb(156, 156, 180);
+  max-width: 45%;
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  vertical-align: baseline;
+}
+@media (max-width: 768px) {
+  .title {
+    max-width: 100%;
+  }
+  .description {
+    max-width: 100%;
+  }
+}
+.buttonCont {
+  margin: 100px auto;
+}
+.btn {
+  padding: 20px;
+  position: relative;
+  background: #ff7b54;
+  color: #222831;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  border: 0px;
+  border-radius: 4px;
+}
+.btn:hover {
+  scale: 1;
+}
+.btn:after {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  bottom: 2px;
+  margin-left: 15px;
+  content: "";
+  background: url(/arrow.png) no-repeat center;
+  background-size: 100%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn:hover:after {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px) scale(1.2);
+}
